@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<header>
+		<h1>Static Job Listing</h1>
+	</header>
+	<main class="main">
+		<JobFilter />
+		<JobList />
+	</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import JobList from '@/components/JobList';
+import JobFilter from '@/components/JobFilter';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		JobList,
+		JobFilter
+	}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import '@/assets/scss/index.scss';
 </style>

@@ -1,0 +1,12 @@
+header {
+	height: 156px;
+	background-image: url('~@/assets/images/bg-header-mobile.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: hsl(180, 29%, 50%);
+	background-position: bottom;
+	text-indent: -9999px;
+	@media screen and (min-width: 768px) {
+		background-image: url('~@/assets/images/bg-header-desktop.svg');
+	}
+}
