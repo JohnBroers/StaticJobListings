@@ -10,6 +10,7 @@
     border-radius: .25rem;
     justify-content: space-between;
     align-items: center;
+    box-shadow: var(--defaultboxshadow);
     &__taglist {
         display: flex;
         align-items: center;
