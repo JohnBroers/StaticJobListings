@@ -32,7 +32,7 @@ export default createStore({
             let jobs;
             console.log(state.filters.length);
             if(state.filters.length > 0) {
-                jobs = state.jobs.filter(j => j.filterOptions.some(f => state.filters.includes(f)));
+                jobs = state.jobs.filter(j => state.filters.every(f => j.filterOptions.includes(f)));
             } else {
                 jobs = state.jobs;
             }
